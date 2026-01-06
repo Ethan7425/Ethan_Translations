@@ -49,6 +49,38 @@ a{ color: inherit; }
   justify-content:space-between;
   padding: 12px 8px;   /* adds space from left/right edges */
 }
+.topbar__actions{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+}
+.lang-switch{
+  display:flex;
+  align-items:center;
+  gap: 6px;
+  padding: 4px 6px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: rgba(255,255,255,0.70);
+}
+.lang-switch__btn{
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  cursor: pointer;
+  line-height: 1;
+  padding: 6px 8px;
+  border-radius: 10px;
+  transition: background 120ms ease, transform 120ms ease;
+}
+.lang-switch__btn:hover{
+  background: rgba(47,111,237,0.08);
+  transform: translateY(-1px);
+}
+.lang-switch__btn.is-active{
+  background: rgba(47,111,237,0.16);
+  box-shadow: 0 0 0 1px rgba(47,111,237,0.30) inset;
+}
 .brand{
   font-weight: 800;
   letter-spacing: 0.2px;

@@ -14,10 +14,18 @@
 <header class="topbar">
   <div class="container topbar__inner">
     <div class="brand">Ethan</div>
-    <a class="btn btn--primary btn--small"
-       href="mailto:ethan.translation@gmail.com?subject=Menu%20translation%20request&body=Hello%20Ethan%2C%0A%0AI%20would%20like%20to%20ask%20about%20an%20English%20menu%20for%20my%20restaurant.%0A%0ARestaurant%20name%3A%0ACity%3A%0AMenu%20format%20(PDF%2Fphoto%2FQR%2Ftablet)%3A%0A%0ALanguages%20needed%3A%20English%0A%0AThank%20you!">
-      Contact
-    </a>
+    <div class="topbar__actions">
+      <div class="lang-switch" aria-label="Switch language">
+        <button class="lang-switch__btn is-active" data-lang="en" type="button" aria-label="Switch to English">🇺🇸</button>
+        <button class="lang-switch__btn" data-lang="ja" type="button" aria-label="日本語に切り替え">🇯🇵</button>
+        <button class="lang-switch__btn" data-lang="ko" type="button" aria-label="한국어로 변경">🇰🇷</button>
+      </div>
+      <a class="btn btn--primary btn--small"
+         data-i18n="topbar-contact"
+         href="mailto:ethan.translation@gmail.com?subject=Menu%20translation%20request&body=Hello%20Ethan%2C%0A%0AI%20would%20like%20to%20ask%20about%20an%20English%20menu%20for%20my%20restaurant.%0A%0ARestaurant%20name%3A%0ACity%3A%0AMenu%20format%20(PDF%2Fphoto%2FQR%2Ftablet)%3A%0A%0ALanguages%20needed%3A%20English%0A%0AThank%20you!">
+        Contact
+      </a>
+    </div>
   </div>
 </header>
 
@@ -28,42 +36,43 @@
   <div class="container">
     <!-- <p class="pill">Menu-friendly • Mobile-first • Fast delivery</p> -->
 
-    <h1>
+    <h1 data-i18n-html="hero-title">
       Translation & Localization<br>
       <span class="muted">for restaurants and tourists</span>
     </h1>
 
-    <p class="lead">
+    <p class="lead" data-i18n="hero-lead">
       Helping restaurants and tourist-facing businesses communicate clearly with international guests.
       Clean, natural translations — and practical help making them usable in real life.
     </p>
 
     <div class="cta">
       <a class="btn btn--primary"
+         data-i18n="hero-email"
          href="mailto:ethan.translation@gmail.com?subject=Menu%20translation%20request&body=Hello%20Ethan%2C%0A%0AI%20would%20like%20to%20ask%20about%20an%20English%20menu%20for%20my%20restaurant.%0A%0ARestaurant%20name%3A%0ACity%3A%0AMenu%20format%20(PDF%2Fphoto%2FQR%2Ftablet)%3A%0A%0ALanguages%20needed%3A%20English%0A%0AThank%20you!">
         Email me
       </a>
-      <a class="btn btn--ghost" href="#services">See services</a>
+      <a class="btn btn--ghost" href="#services" data-i18n="hero-services">See services</a>
     </div>
 
     <div class="quicklinks">
-      <a href="#services">Services</a>
-      <a href="#how">How it works</a>
-      <a href="#contact">Contact</a>
+      <a href="#services" data-i18n="nav-services">Services</a>
+      <a href="#how" data-i18n="nav-how">How it works</a>
+      <a href="#contact" data-i18n="nav-contact">Contact</a>
     </div>
 
     <div class="trust">
       <div class="trust__item">
-        <div class="trust__title">What I fix</div>
-        <div class="trust__text">Incomplete English menus, confusing auto-translation, missing descriptions.</div>
+        <div class="trust__title" data-i18n="trust-fix-title">What I fix</div>
+        <div class="trust__text" data-i18n="trust-fix-text">Incomplete English menus, confusing auto-translation, missing descriptions.</div>
       </div>
       <div class="trust__item">
-        <div class="trust__title">Where</div>
-        <div class="trust__text">Japan • Korea • Anywhere with international guests.</div>
+        <div class="trust__title" data-i18n="trust-where-title">Where</div>
+        <div class="trust__text" data-i18n="trust-where-text">Japan • Korea • Anywhere with international guests.</div>
       </div>
       <div class="trust__item">
-        <div class="trust__title">Delivery</div>
-        <div class="trust__text">File-only or “I help you publish it” depending on your system.</div>
+        <div class="trust__title" data-i18n="trust-delivery-title">Delivery</div>
+        <div class="trust__text" data-i18n="trust-delivery-text">File-only or “I help you publish it” depending on your system.</div>
       </div>
     </div>
   </div>
@@ -73,21 +82,21 @@
 <section class="section">
   <div class="container grid">
     <div>
-      <h2>What I do</h2>
-      <p>
+      <h2 data-i18n="what-title">What I do</h2>
+      <p data-i18n="what-body1">
         I help restaurants improve their menus for foreign customers by providing clear, natural translations
         and practical support to make them usable in real situations.
       </p>
-      <p>
+      <p data-i18n="what-body2">
         Many restaurants already offer an “English menu”, but it is often incomplete, confusing, or automatically translated.
         I help fix that.
       </p>
     </div>
 
     <div class="card card--accent">
-      <h3>Languages</h3>
-      <p class="big">English · Japanese · Korean · French</p>
-      <p class="small muted">(More can be added later if needed.)</p>
+      <h3 data-i18n="languages-title">Languages</h3>
+      <p class="big" data-i18n="languages-list">English · Japanese · Korean · French</p>
+      <p class="small muted" data-i18n="languages-note">(More can be added later if needed.)</p>
     </div>
   </div>
 </section>
@@ -95,24 +104,24 @@
 <!-- SERVICES -->
 <section class="section section--alt" id="services">
   <div class="container">
-    <h2>Services</h2>
+    <h2 data-i18n="services-title">Services</h2>
     <div class="cards">
       <div class="card">
-        <h3>Menu translation</h3>
-        <p>Full translation of dish names and descriptions (natural, customer-friendly).</p>
+        <h3 data-i18n="service-menu-title">Menu translation</h3>
+        <p data-i18n="service-menu-text">Full translation of dish names and descriptions (natural, customer-friendly).</p>
       </div>
       <div class="card">
-        <h3>English menu creation</h3>
-        <p>For restaurants that currently have no English menu.</p>
+        <h3 data-i18n="service-english-title">English menu creation</h3>
+        <p data-i18n="service-english-text">For restaurants that currently have no English menu.</p>
       </div>
       <div class="card">
-        <h3>Menu improvement</h3>
-        <p>Fixing unclear or broken English menus (especially auto-translation).</p>
+        <h3 data-i18n="service-improve-title">Menu improvement</h3>
+        <p data-i18n="service-improve-text">Fixing unclear or broken English menus (especially auto-translation).</p>
       </div>
       <div class="card">
-        <h3>Digital menu support</h3>
-        <p>Assistance with tablet, QR, or digital menu systems when possible.</p>
-        <p class="small muted">Depends on the platform and level of access.</p>
+        <h3 data-i18n="service-digital-title">Digital menu support</h3>
+        <p data-i18n="service-digital-text">Assistance with tablet, QR, or digital menu systems when possible.</p>
+        <p class="small muted" data-i18n="service-digital-note">Depends on the platform and level of access.</p>
       </div>
     </div>
   </div>
@@ -121,19 +130,19 @@
 <!-- HOW IT WORKS -->
 <section class="section" id="how">
   <div class="container">
-    <h2>How it works</h2>
+    <h2 data-i18n="how-title">How it works</h2>
     <ol class="steps">
       <li>
-        <strong>You send your menu</strong>
-        <span>PDF, photo, spreadsheet, or text — whatever you have.</span>
+        <strong data-i18n="step1-title">You send your menu</strong>
+        <span data-i18n="step1-text">PDF, photo, spreadsheet, or text — whatever you have.</span>
       </li>
       <li>
-        <strong>I translate & clean it up</strong>
-        <span>Natural wording, consistent names, clear descriptions.</span>
+        <strong data-i18n="step2-title">I translate & clean it up</strong>
+        <span data-i18n="step2-text">Natural wording, consistent names, clear descriptions.</span>
       </li>
       <li>
-        <strong>I deliver</strong>
-        <span>As a file you can upload — and if possible, I can help publish it in your menu system.</span>
+        <strong data-i18n="step3-title">I deliver</strong>
+        <span data-i18n="step3-text">As a file you can upload — and if possible, I can help publish it in your menu system.</span>
       </li>
     </ol>
   </div>
@@ -142,10 +151,10 @@
 <!-- CONTACT -->
 <section class="section section--alt" id="contact">
   <div class="container">
-    <h2>Contact</h2>
+    <h2 data-i18n="contact-title">Contact</h2>
     <div class="contact card">
       <div>
-        <div class="small muted">Email</div>
+        <div class="small muted" data-i18n="contact-email-label">Email</div>
         <div class="big">
           <a href="mailto:ethan.translation@gmail.com?subject=Menu%20translation%20request">
             ethan.translation@gmail.com
@@ -155,6 +164,7 @@
 
       <div class="contact__actions">
         <a class="btn btn--primary"
+           data-i18n="contact-button"
            href="mailto:ethan.translation@gmail.com?subject=Menu%20translation%20request">
           Open email
         </a>
@@ -171,16 +181,13 @@
 
 <footer class="footer">
   <div class="container footer__inner">
-    <div class="small muted">© <span id="year"></span> Ethan — Translation & Localization</div>
-    <a class="small muted" href="#top">Back to top</a>
+    <div class="small muted">© <span id="year"></span> <span data-i18n="footer-name">Ethan — Translation & Localization</span></div>
+    <a class="small muted" href="#top" data-i18n="footer-back">Back to top</a>
   </div>
 </footer>
 
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
 <!-- Cloudflare Web Analytics snippet goes here -->
+<script src="script.js"></script>
 
 </body>
 </html>
